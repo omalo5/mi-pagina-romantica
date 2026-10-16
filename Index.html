@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170d2b">
+  <title>Un universo para ti 💗</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <main class="page">
+    <div class="top-label"><span class="sparkle">✦</span> UN MENSAJE SOLO PARA TI <span class="sparkle">✦</span></div>
+
+    <section class="hero card">
+      <div class="moon" aria-hidden="true">☾</div>
+      <div class="heart-orbit" aria-hidden="true">
+        <span class="orbit-heart h1">♥</span><span class="orbit-heart h2">♥</span>
+        <span class="orbit-heart h3">♥</span><span class="orbit-heart h4">♥</span>
+      </div>
+      <p class="eyebrow">He estado queriendo decirte algo…</p>
+      <h1>Hay una pregunta<br><em>que llevo en el corazón</em></h1>
+      <p class="intro">Y hoy quiero reunir un poquito de valentía para hacértela de la forma más bonita que se me ocurrió.</p>
+      <button class="primary" id="openLetter">Abrir mi mensaje <span>♡</span></button>
+      <div class="scroll-note">Desliza para descubrir <span>↓</span></div>
+    </section>
+
+    <section class="letter card hidden" id="letter">
+      <div class="letter-icon">💌</div>
+      <p class="eyebrow">De mí, para ti</p>
+      <h2>Quiero conocerte en cada capítulo</h2>
+      <p>No necesito prometerte una historia perfecta. Me gustaría construir una historia sincera: con risas inesperadas, conversaciones largas, apoyo en los días difíciles y recuerdos que nos hagan sonreír.</p>
+      <p>Me gusta la idea de seguir conociéndote, cuidar lo bonito que pueda nacer entre nosotros y demostrarte con acciones lo especial que eres para mí.</p>
+      <p class="signature">Así que… aquí viene mi pregunta. ✨</p>
+    </section>
+
+    <section class="question card" id="question">
+      <div class="tiny-hearts" aria-hidden="true">♡ ♡ ♡</div>
+      <p class="eyebrow">La pregunta más importante de esta página</p>
+      <h2>¿Quieres ser <em>mi novia</em>? 💗</h2>
+      <p class="question-sub">No tienes que responder por compromiso. Lo más importante es que sea lo que tú también quieras.</p>
+      <div class="buttons">
+        <button class="yes" id="yesBtn">¡Sí, quiero! 💖</button>
+        <button class="maybe" id="thinkBtn">Quiero pensarlo 🌷</button>
+      </div>
+      <p class="small-note" id="hint" aria-live="polite">Elige con el corazón y sin presión.</p>
+    </section>
+
+    <section class="memory card">
+      <p class="eyebrow">Un pequeño detalle</p>
+      <h2>Si nuestra historia fuera una canción…</h2>
+      <p>Me gustaría que tuviera una melodía tranquila, momentos que nos hagan reír y un coro que nos recuerde que lo bonito se construye entre dos.</p>
+      <button class="secondary" id="surpriseBtn">Toca para una sorpresa ✨</button>
+      <div class="surprise hidden" id="surprise" aria-live="polite">🌙 Que nunca nos falten motivos para sonreír, hablar con sinceridad y elegir lo que nos haga bien. 🌷</div>
+    </section>
+
+    <footer>Hecho con cariño, un poquito de nervios y muchas ganas de ser sincero. <span>♡</span></footer>
+  </main>
+
+
+  <div class="galaxy-intro" id="galaxyIntro" aria-label="Introducción espacial romántica">
+    <canvas id="galaxyCanvas" aria-hidden="true"></canvas>
+    <div class="intro-nebula nebula-one"></div>
+    <div class="intro-nebula nebula-two"></div>
+    <div class="intro-vignette"></div>
+    <div class="intro-content" id="introContent">
+      <p class="intro-kicker">EN UN UNIVERSO LLENO DE ESTRELLAS</p>
+      <div class="intro-planet" aria-hidden="true"><span class="planet-ring"></span><span class="planet-glow"></span></div>
+      <h1 class="intro-title">Hay millones de estrellas,<br><em>pero una brilla diferente…</em></h1>
+      <p class="intro-subtitle">Y esta pequeña historia es para ti.</p>
+      <button class="intro-enter" id="enterStory">Viajar a nuestra historia <span>↗</span></button>
+      <p class="intro-footnote">Ponte cómoda… nuestro viaje está por comenzar</p>
+    </div>
+    <div class="warp-flash" id="warpFlash"></div>
+  </div>
+
+  <div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <canvas id="celebrationCanvas" aria-hidden="true"></canvas>
+    <div class="celebration-glow glow-a"></div>
+    <div class="celebration-glow glow-b"></div>
+    <div class="celebration-content">
+      <div class="flower-garden" aria-hidden="true">
+        <span class="bloom bloom-one">🌷</span>
+        <span class="bloom bloom-two">🌸</span>
+        <span class="bloom bloom-three">🌹</span>
+        <span class="bloom bloom-four">🌼</span>
+        <span class="bloom bloom-five">🌷</span>
+        <span class="bloom bloom-six">🌸</span>
+        <span class="bloom bloom-seven">🌻</span>
+      </div>
+      <div class="celebration-heart" aria-hidden="true">💖</div>
+      <p class="eyebrow">✦ NUESTRO UNIVERSO ACABA DE BRILLAR MÁS ✦</p>
+      <h2 id="modalTitle">¡Siiii! 💗<br><em>Comienza nuestra historia</em></h2>
+      <p class="celebration-message">De todas las cosas bonitas que podían pasar hoy, esta es mi favorita. Gracias por darme la oportunidad de crear recuerdos contigo, llenar los días de sonrisas y descubrir juntos lo bonito que puede ser este comienzo.</p>
+      <div class="flower-line" aria-hidden="true">✿　🌷　✿　🌸　✿</div>
+      <p class="celebration-promise">Sin prisas, con sinceridad y con mucho cariño. 🌙</p>
+      <button class="primary" id="closeModal">Guardar este momento ♡</button>
+    </div>
+    <div class="confetti" aria-hidden="true"></div>
+    <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+  </div>
+
+  <div class="thinking-overlay hidden" id="thinkingOverlay" role="dialog" aria-modal="true" aria-labelledby="thinkingTitle">
+    <div class="thinking-sky" aria-hidden="true">
+      <span class="thinking-star star-a">✦</span><span class="thinking-star star-b">✧</span>
+      <span class="thinking-star star-c">✦</span><span class="thinking-star star-d">✧</span>
+      <span class="thinking-flower flower-a">🌷</span><span class="thinking-flower flower-b">🌸</span>
+      <span class="thinking-flower flower-c">🌼</span><span class="thinking-flower flower-d">💗</span>
+    </div>
+    <div class="thinking-card">
+      <div class="thinking-orbit" aria-hidden="true"><span>🌙</span><i>♡</i></div>
+      <p class="eyebrow">EL UNIVERSO TAMBIÉN SABE ESPERAR</p>
+      <h2 id="thinkingTitle">No hay prisa… <em>tómate tu tiempo</em> 🌷</h2>
+      <p>Las cosas bonitas merecen una respuesta sincera. No tienes que decidir ahora; lo importante es que te sientas cómoda y que sea lo que tú quieras.</p>
+      <button class="primary" id="thinkingClose">Seguir pensando con calma ♡</button>
+    </div>
+  </div>
+
+
+  <div class="surprise-universe hidden" id="surpriseUniverse" role="dialog" aria-modal="true" aria-label="Sorpresa especial">
+    <canvas id="surpriseStars" aria-hidden="true"></canvas>
+    <div class="surprise-portal" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="surprise-stage" id="surpriseStage">
+      <p class="surprise-overline">✦ SEÑAL MISTERIOSA DETECTADA ✦</p>
+      <h2>Hay una sorpresa<br><em>esperando por ti…</em></h2>
+      <p>Acércate al portal y descubre tu pequeño universo.</p>
+      <button class="surprise-launch" id="surpriseLaunch">Activar sorpresa <span>✦</span></button>
+    </div>
+    <div class="surprise-reveal-card hidden" id="surpriseRevealCard">
+      <div class="surprise-crown">✧ ✦ ✧</div>
+      <div class="surprise-big-heart">💗</div>
+      <div class="surprise-bouquet">🌷　🌹　🌸　🌼</div>
+      <p class="surprise-overline">UN MENSAJITO ENTRE LAS ESTRELLAS</p>
+      <h2>Si pudiera regalarte<br><em>algo del universo…</em></h2>
+      <p>te regalaría la oportunidad de ver lo especial que eres, una lluvia de momentos bonitos y mil razones para sonreír. No hay magia más bonita que la que nace cuando dos personas se conocen de verdad. ✨</p>
+      <div class="surprise-signature">Con cariño, para ti ♡</div>
+      <button class="surprise-launch surprise-close" id="closeSurprise">Volver a las estrellas</button>
+    </div>
+    <button class="surprise-x" id="surpriseX" aria-label="Cerrar sorpresa">×</button>
+    <div class="surprise-comets" aria-hidden="true">✦　✧　✦　✧　✦</div>
+  </div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
